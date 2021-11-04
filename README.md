@@ -1,2 +1,2 @@
 # csschallenges
-A CSS challenges on frontendmentor.io
+CSS challenges on frontendmentor.io
