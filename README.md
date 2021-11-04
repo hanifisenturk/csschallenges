@@ -46,7 +46,7 @@ I will use the grid layout system instead of the flexbox layout system.
 ## Author
 
 - Website - [mehmethanifisenturk.com](http://www.mehmethanifisenturk.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/hanifisenturk)
+- Frontend Mentor - [@hanifisenturk](https://www.frontendmentor.io/profile/hanifisenturk)
 - Twitter - [@turkogandhi](https://www.twitter.com/turkogandhi)
 
 
