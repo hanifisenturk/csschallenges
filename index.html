@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+ 
+  <style>
+   *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+   }
+
+   html{
+     font-size: 62.5%;
+   }
+
+   /* Reusable Components */
+
+   .flex-centered{
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+   }
+
+   /* Reusable Components */
+
+   body{
+     font-family: "Inter", sans-serif;
+     height: 100vh;
+     background: url("images/pattern-background-desktop.svg");
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
+
+   .card{
+     width: 25%;
+     overflow: hidden;
+     background-color: #fff;
+     border-radius: 2rem;
+     box-shadow: 0 2rem 4rem rgba(0, 0, 0, .1);
+     flex-direction: column;
+   }
+     
+   
+   .card-header--text{
+     font-weight: 700;
+     font-size: 2rem;
+     margin-bottom: 2rem;
+   }
+
+   .card-text{
+     margin-bottom: 2rem;
+     color: hsl(224, 23%, 55%);
+     font-size: 1.3rem;
+     text-align: center;
+   }
+   .order-details{
+     flex-direction: column;
+     padding: 4.8rem;
+   }
+
+   .payment{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin-bottom: 2rem;
+     gap: 4rem;
+     padding: 0.8rem 3.6rem;
+     background-color: #F8F9FE;
+     border-radius: 1rem;
+   }
+
+   .price-plan{
+     gap: 1rem;
+      
+}
+
+  
+
+   .plan-name{
+     font-weight: 700;
+   }
+
+   .payment-proceed{
+     display: inline-block;
+     color: #fff;
+     background-color: hsl(245, 75%, 52%);
+     padding: 1.5rem 6rem;
+     border-radius: 1rem;
+     font-size: 1.5rem;
+     font-weight: 600;
+     margin-bottom: 2rem;
+     box-shadow: 0 2rem 4rem rgba(0, 0, 0, .1);
+   }
+
+   .order-cancel{
+     color: hsl(224, 23%, 55%);
+     font-weight: 600;
+   }
+
+   .link-change{
+     text-decoration: underline;
+     color: hsl(245, 75%, 52%);
+     display: inline-block;
+     font-weight: 600;
+   }
+
+
+
+
+  </style>
+</head>
+
+
+
+<body class="flex-centered">
+
+  <div class="card flex-centered">
+   
+    <img src="images/illustration-hero.svg" alt="A woman is listening music." class="img-hero">
+     <div class="order-details flex-centered">
+
+       <p class="card-header--text">Order Summary</p>
+       <p class="card-text">You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like!</p>
+       
+       <div class="payment">
+         <div class="price-plan flex-centered">
+           <img src="images/icon-music.svg" alt="music note symbol">
+           <div class="priceplan-details">
+             <p class="plan-name">Annual Plan</p>
+             <p class="price">&dollar;59.99/year</p>
+            </div>
+          </div>
+          <a href="#" class="link-change">Change</a>
+        </div>
+        
+        <a href="#" class="payment-proceed">Proceed to Payment</a>
+        <a href="#" class="order-cancel">Cancel Order</a>
+        
+        
+      </div>
+  </div>
+
+  
+  
+  
+</body>
+</html>
