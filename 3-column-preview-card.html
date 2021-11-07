@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    html{
+      font-size: 62.5%;
+    }
+
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Lexend Deca",sans-serif;
+    }
+
+    .card-container{
+      max-width: 120rem;
+      display: flex;
+      justify-content: center;
+      padding: 9.6rem;
+      box-shadow: 4rem 4rem 4rem 4rem  rgba(0, 0, 0, 0.1);
+    }
+
+    .card{
+      padding: 4.8rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.4rem;
+      align-items: flex-start;
+      
+      
+    }
+
+    .card img{
+       width: 6.4rem;
+       height: 3.6rem; 
+     
+    }
+
+    .sedan{
+      background-color: #E28525;
+    }
+
+    .vehicle-name{
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: hsl(0, 0%, 95%);
+    }
+
+    .text{
+      color: hsla(0, 0%, 100%, 0.75);
+      font-size: 1.6rem;
+      line-height: 1.8;
+      margin-bottom: 5.2rem;
+    }
+    
+    .btn{
+      display: inline-block;
+      background-color: hsl(0, 0%, 95%);
+      padding: 1.2rem 3.6rem;
+      border-radius: 2rem;
+      text-align: center;
+      font-size: 1.6rem;
+      
+    }
+
+    .suvs{
+      background-color: #016972;
+    }
+
+    .luxury{
+      background-color: #00403F;
+    }
+
+    .sedan .btn {
+      color:#E28525 ;
+      
+    }
+
+    .suvs .btn{
+      color:#016972 ;
+    }
+
+    .luxury .btn{
+      color: #00403F ;
+    }
+
+    .card:first-child{
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+
+    .card:last-child{
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+
+    
+
+
+    
+    
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+
+    <div class="card sedan">
+      <img src="/images/icon-sedans.svg" alt="" class="icon">
+      <p class="vehicle-name">SEDANS</p>
+      <p class="text">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+        or on your next road trip.</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="card suvs">
+      <img src="/images/icon-suvs.svg" alt="" class="icon">
+      <p class="vehicle-name">SUVS</p>
+      <p class="text">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+        and off-road adventures.</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="card luxury">
+      <img src="/images/icon-luxury.svg" alt="" class="icon">
+      <p class="vehicle-name">LUXURY</p>
+      <p class="text"> Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+        rental and arrive in style.</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+
+
+
+
+
+
+  </div>
+
+  
+  
+     
+
+   
+      
+     
+
+        
+  </div>
+  
+
+  
+  
+ 
+</body>
+</html>
