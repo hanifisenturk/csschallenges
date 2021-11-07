@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+
+  <style>
+   *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+   }
+
+   html{
+     font-size: 62.5%;
+   }
+
+   body{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: "Kumbh Sans",sans-serif;
+     overflow: hidden;
+     
+   }
+
+   .card-container{
+     min-width: 120rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 4rem 4rem 4rem 4rem rgba(0, 0, 0, .1);
+     background-color: #1BA1AD;
+     padding: 4.8rem 9.6rem;
+     position: relative;
+     overflow: hidden;
+    
+
+   }
+
+   .card{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background-color: #fff;
+     border-radius: 2rem;
+     overflow: hidden;
+     position: relative;
+     box-shadow: 2rem 2rem 2rem 2rem rgba(0, 0, 0, .1);
+   }
+
+   .profile-photo{
+     z-index: 1;
+     position: absolute;
+     border-radius: 50%;
+     border:  0.3rem solid #fff;
+     top: 9rem;
+   }
+
+   .infos{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     row-gap: 1.6rem;
+     padding: 4.8rem 2.4rem;
+     background-color: #fff;
+     margin-top: 2rem;
+     
+
+   }
+
+   .person-name{
+     font-weight: 700;
+     font-size: 1.8rem;
+     
+   }
+
+   .person-name span{
+     font-weight: 400;
+     color: hsl(227, 10%, 46%);
+   }
+
+   .city{
+     font-size: 1.4rem;
+      color: hsl(227, 10%, 46%);
+      margin-bottom: 4.8rem;
+   }
+
+   .numbers-info{
+     display: flex;
+     gap: 6rem;
+     
+    
+   }
+
+   .numbers{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 1rem;
+   }
+
+   .number{
+     font-weight: 700;
+     font-size: 1.6rem;
+   }
+
+   hr{
+    width: 100%;
+    color: rgba(0, 0, 0, .1);
+    height: 1px;
+
+   }
+
+   .top-img{
+     left: -5%;
+     top: -50%;
+     height: 100%;
+     position: absolute;
+     transform: translateX(5%);
+   }
+
+   .bottom-img{
+     right: -5%;
+     bottom: -50%;
+     height: 100%;
+     position: absolute;
+     transform: translateX(-  5%);
+   
+   }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <img class="top-img" src="/images/bg-pattern-top.svg" alt="">
+    <img class="bottom-img" src="/images/bg-pattern-top.svg" alt="">
+    <di class="card">
+      <img class="card-image" src="/images/bg-pattern-card.svg" alt="">
+      <img src="/images/image-victor.jpg" alt="" class="profile-photo">
+       <div class="infos">
+
+         
+         <p class="person-name">Victor Crest <span>26</span></p>
+         <p class="city">London</p>
+         <div class="numbers-info">
+           <div class="numbers">
+             <p class="number">80K</p>
+             <p class="number-info">Followers</p>
+            </div>
+            
+            <div class="numbers">
+              <p class="number">803K</p>
+              <p class="number-info">Likes</p>
+            </div>
+            
+            <div class="numbers">
+              <p class="number">1.4K</p>
+              <p class="number-info">#hashtag</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+      
+    </div>
+  </body>
+  </html>
+  
