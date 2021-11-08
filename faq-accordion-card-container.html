@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+<title>Frontend Mentor | FAQ Accordion Card</title>
+
+
+  <style>
+
+   *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+   }
+
+   html{
+     font-size: 62.5%;
+   }
+
+   body{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+     font-family: "Kumbh Sans",sans-serif;
+   }
+
+   .container{
+     padding: 6.4rem 9.6rem;
+     background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+     position: relative;
+   }
+
+   .container-inner{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     column-gap: 6.4rem;
+     padding: 4.8rem;
+     background-color: aliceblue;
+     border-radius: 2rem;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     overflow: hidden;
+    }
+
+    .faq-container{
+      display: flex;
+      flex-direction: column;
+      column-gap: 4.8rem;
+      
+      
+    }
+
+    .faq-title{
+      font-size: 3.6rem;
+      margin-bottom: 2.4rem;
+    }
+
+    .faq-box{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid hsl(240, 5%, 91%);
+      padding:1.6rem 0;
+      cursor: pointer;
+      column-gap: 3.2rem;
+    }
+
+   
+
+    
+
+    .question{
+      font-size: 1.6rem;
+      color: hsl(240, 6%, 50%);
+    }
+
+    .icon{
+      font-size: 2.4rem;
+      color: hsl(14, 88%, 65%);
+    }
+ 
+    .woman{
+      position: absolute;
+      left: -8rem;
+    }
+
+    .box{
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 24rem;
+    }
+
+    
+
+
+
+
+    
+  </style>
+</head>
+<body>
+
+   <div class="container">
+    <img src="/images/illustration-box-desktop.svg" alt="" class="box">
+
+       <div class="container-inner">
+         <div class="empty"></div>
+            <img src="/images/illustration-woman-online-desktop.svg" alt="" class="woman">
+            <div class="faq-container">
+              <h3 class="faq-title">FAQ</h3>
+              <div class="faq-box">
+                <p class="question">How many team members can I invite?</p>
+                <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
+              </div>
+
+              <div class="faq-box">
+                <p class="question">
+                  What is the maximum file upload size?</p>
+                <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
+              </div>
+
+              <div class="faq-box">
+                <p class="question">How do I reset my password?</p>
+                <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
+              </div>
+
+              <div class="faq-box">
+                <p class="question">Can I cancel my subscription?</p>
+                <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
+              </div>
+
+              <div class="faq-box">
+                <p class="question">Do you provide additional support?</p>
+                <ion-icon class="icon" name="chevron-down-outline"></ion-icon>
+              </div>
+            </div>
+
+
+       </div>
+   </div>
+
+  <!-- How many team members can I invite?
+  You can invite up to 2 additional users on the Free plan. There is no limit on 
+  team members for the Premium plan.
+
+  What is the maximum file upload size?
+  No more than 2GB. All files in your account must fit your allotted storage space.
+
+  How do I reset my password?
+  Click “Forgot password” from the login page or “Change password” from your profile page.
+  A reset link will be emailed to you.
+
+  Can I cancel my subscription?
+  Yes! Send us a message and we’ll process your request no questions asked.
+
+  Do you provide additional support?
+  Chat and email support is available 24/7. Phone lines are open during normal business hours. -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
