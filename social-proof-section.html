@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+     *{
+       padding : 0;
+       margin: 0;
+       box-sizing: 0;
+     }
+
+     html{
+       font-size: 62.5%;
+       
+     }
+
+     body{
+       font-family: "Spartan",sans-serif;
+       padding: 9.6rem;
+       overflow: hidden;
+     }
+
+     .container{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       column-gap: 12.8rem;
+     }
+
+     .slogan{
+       display: flex;
+       flex-direction: column;
+       gap: 1.2rem;
+     }
+
+     .slogan-text-header{
+       font-size: 5.2rem;
+       color: hsl(300, 43%, 22%);
+     
+     }
+
+     .slogan-text{
+       color:hsl(303, 10%, 53%);
+       font-size: 1.8rem;
+       margin-bottom: 4.8rem;
+     }
+
+     .rated{
+       display: flex;
+       flex-direction: column;
+       gap: 1.8rem;
+       position: relative;
+       
+     }
+
+    
+
+     .rated-stars{
+      display: flex;
+      align-items: center;
+      gap: 4.8rem;
+      padding: 1.2rem 2.4rem;
+      background-color: hsl(300, 24%, 96%);
+      border-radius: 1rem;
+      }
+
+      .rated-stars:first-child{
+        position: absolute;
+        right: 20rem;
+      }
+
+      .rated-stars:nth-child(2){
+        position: absolute;
+        top:calc(4.76rem + 1.8rem);
+        right: 10rem;
+
+      }
+
+      .rated-stars:last-child{
+        position: absolute;
+        top:  calc(9.52rem + 3.6rem);
+        right: 0;
+      }
+     
+      
+
+     .stars{
+       font-size: 1.8rem;
+     }
+
+     .icon{
+       color: orange;
+
+     }
+
+     .rated-text{
+       font-weight: 700;
+       color: hsl(300, 43%, 22%);
+     }
+
+     .testimonials{
+       display: flex;
+       gap: 1.8rem;
+       grid-column: 1/-1;
+       
+     }
+
+     
+
+     .testimonial-card{
+       display: flex;
+       flex-direction: column;
+       background-color: hsl(300, 43%, 22%);
+       border-radius: 0.5rem;
+       padding: 3.2rem;
+       position: relative;
+     }
+
+     .testimonial-card:nth-child(2){
+       left: .13rem;
+       top: 2rem;
+     }
+
+     .testimonial-card:last-child{
+       left: .26rem;
+       top: 4rem;
+     }
+
+     .profile{
+       border-radius: 50%;
+       width: 5.2rem;
+       height: 5.2rem;
+     }
+
+     .testimonial-author{
+       display: flex;
+       align-items: center;
+       gap: 1.8rem;
+       margin-bottom: 2.4rem;
+     }
+
+     .testimonial-author-name{
+       display: flex;
+       flex-direction: column;
+       gap: 0.5rem;
+       color: #fff;
+       font-size: 1.8rem;
+     }
+     
+     .customer-type{
+       color: hsl(333, 80%, 67%);
+       font-size: 1.2rem;
+;
+     }
+
+     
+
+     .testimonial-text{
+       color: hsl(300, 24%, 96%);
+       font-size: 1.8rem;
+       line-height: 1.6;
+     }
+
+     
+    </style>
+  </head>
+  <body>
+     <div class="container">
+       
+       <div class="slogan">
+         <h2 class="slogan-text-header">10,000+ of our users love our products.</h2>
+         
+         <p class="slogan-text">We only provide great products combined with excellent customer service.
+           See what our satisfied customers are saying about our services.
+          </p>
+        </div>
+        
+        <div class="rated">
+          <div class="rated-stars">
+            <div class="stars">
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+            </div>
+            
+            <p class="rated-text">Rated 5 Stars in Reviews</p>
+          </div>
+
+          <div class="rated-stars">
+            <div class="stars">
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+            </div>
+            
+            <p class="rated-text">Rated 5 Stars in Report Guru</p>
+          </div>
+
+          <div class="rated-stars">
+            <div class="stars">
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+              <ion-icon class="icon" name="star-outline"></ion-icon>
+            </div>
+            
+            <p class="rated-text">Rated 5 Stars in BestTech</p>
+          </div>
+        </div>
+
+        <div class="testimonials">
+
+           <div class="testimonial-card">
+             <div class="testimonial-author">
+
+               <img src="/images/image-colton.jpg" alt="" class="profile">
+               <div class="testimonial-author-name">
+                 <p class="name">Colton Smith</p>
+                 <p class="customer-type">Verified Buyer</p>
+               </div>
+
+              </div>
+              
+              <p class="testimonial-text">
+                " We needed the same printed design as the one we had ordered a week prior.
+                Not only did they find the original order, but we also received it in time.
+                Excellent! "
+               </p>
+           </div>
+
+           <div class="testimonial-card">
+            <div class="testimonial-author">
+
+              <img src="/images/image-irene.jpg" alt="" class="profile">
+              <div class="testimonial-author-name">
+                <p class="name">Irene Roberts</p>
+                <p class="customer-type">Verified Buyer</p>
+              </div>
+
+             </div>
+             
+             <p class="testimonial-text">
+              "Customer service is always excellent and very quick turn around. Completely
+              delighted with the simplicity of the purchase and the speed of delivery."
+              </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-author">
+
+              <img src="/images/image-anne.jpg" alt="" class="profile">
+              <div class="testimonial-author-name">
+                <p class="name">Anne Wallace</p>
+                <p class="customer-type">Verified Buyer</p>
+              </div>
+
+             </div>
+             
+             <p class="testimonial-text">
+               "We needed the same printed design as the one we had ordered a week prior.
+               Not only did they find the original order, but we also received it in time.
+               Excellent!"
+              </p>
+          </div>
+
+        </div>
+        
+      </div>
+        
+        <!-- 10,000+ of our users love our products.
+          
+          We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.
+          
+          Rated 5 Stars in Reviews
+          Rated 5 Stars in Report Guru
+    Rated 5 Stars in BestTech
+    
+    Colton Smith 
+    Verified Buyer
+    "We needed the same printed design as the one we had ordered a week prior.
+    Not only did they find the original order, but we also received it in time.
+    Excellent!"
+    
+    Irene Roberts 
+    Verified Buyer
+    "Customer service is always excellent and very quick turn around. Completely
+    delighted with the simplicity of the purchase and the speed of delivery."
+    
+    Anne Wallace 
+    Verified Buyer
+    "Put an order with this company and can only praise them for the very high
+    standard. Will definitely use them again and recommend them to everyone!" -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
