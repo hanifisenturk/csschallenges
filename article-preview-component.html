@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html{
+      font-size:62.5%;
+
+    }
+
+    body{
+      height: 100vh;
+      background-color: hsl(210, 46%, 95%);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Manrope",sans-serif;
+    }
+
+    .container{
+      max-width: 120rem;
+    }
+
+    .card{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 4.8rem;
+      background-color: #fff;
+      overflow: hidden;
+      border-radius: 1rem;
+      box-shadow: 0 2rem 2rem rgba(0, 0, 0, .1);
+      position: relative;
+    }
+
+    .card-photo{
+      width: 100%;
+      height: 100%;
+     
+      
+    }
+
+    .card-information{
+      display: flex;
+      flex-direction: column;
+      padding: 3.2rem 4.8rem 3.2rem 0;
+      gap: 2.4rem;
+    }
+
+    .card-header-text{
+      font-weight: 700;
+      font-size: 4.2rem;
+
+    }
+
+    .card-text{
+      font-size: 1.8rem;
+      color: hsl(214, 17%, 51%);
+    }
+
+    .profile{
+      display: flex;
+      align-items: center;
+      gap: 2.4rem;
+
+    }
+
+
+
+    .profile-photo{
+      border-radius: 50%;
+      width: 6.4rem;
+      height: 6.4rem;
+
+    }
+
+    .author{
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-right: auto;
+    }
+
+    .author-name{
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .written-date{
+      color: hsl(212, 23%, 69%);
+      font-size: 1.2rem;
+    }
+
+
+    .icon{
+      cursor: pointer;
+      display: block;
+      padding: 1.2rem;
+      background-color: hsl(210, 46%, 95%);
+      border-radius: 50%;
+      }
+
+      .icon:hover{
+        
+        background-color:  hsl(212, 23%, 69%);
+      }
+
+   
+      
+    
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    
+    <div class="card">
+      <div class="img">
+        <img src="/images/drawers.jpg" alt="" class="card-photo">
+        
+      </div>
+      <div class="card-information">
+        <p class="card-header-text">Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home</p>
+          
+          <p class="card-text">Ever been in a room and felt like something was missing? Perhaps 
+            it felt slightly bare and uninviting. I’ve got some simple tips 
+            to help you make any room feel complete.</p>
+            
+            <div class="profile">
+              <img src="/images/avatar-michelle.jpg" alt="" class="profile-photo">
+              <div class="author">
+                <p class="author-name">Michelle Appleton</p>
+                <p class="written-date">26 Jun 2020</p>
+              </div>
+              <img src="/images/icon-share.svg" alt="" class="icon">
+              
+            </div>
+          </div>
+        </div>
+        
+        <!-- Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+          
+          
+          
+          Michelle Appleton
+          28 Jun 2020
+          
+          Share
+        -->
+        
+      </div>
+      </body>
+</html>
