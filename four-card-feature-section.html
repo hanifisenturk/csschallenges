@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html{
+      font-size: 62.5%;
+    }
+
+    body{
+      height:  100vh;
+      overflow: hidden;
+      font-family: "Poppins",sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      
+    }
+
+    .container{
+      max-width: 120rem;
+      box-shadow: 0 2rem 1rem rgba(0, 0, 0, .1);
+      padding: 9.6rem;
+      display: flex;
+      justify-content: center;
+      gap: 3.2rem;
+      align-items: center;
+      flex-direction: column;
+     
+      
+    }
+
+    .header-slogans{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1{
+      font-weight: 600;
+      font-size: 3.2rem;
+      margin-bottom: 1.8rem;
+      color: hsl(234, 12%, 34%);
+    }
+
+    h2{
+      font-weight:200;
+     color:  hsl(229, 6%, 66%);
+     font-size: 3.2rem;
+     margin-bottom: -1rem;
+
+    }
+
+    .slogan-paragraph{
+      font-weight: 200;
+     color:  hsl(229, 6%, 66%);
+      
+    }
+
+    .cards{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     justify-content: center;
+     align-items: center;
+     gap: 2.4rem;
+      
+      
+      
+    }
+
+    .group-cards{
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      
+    }
+
+    .card{
+      padding: 2.4rem;
+      box-shadow: 0 2rem 2rem rgba(0, 0, 0, .1);
+      }
+
+    .card-texts{
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .card-header-text{
+      font-weight: 600;
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .card-text{
+     color:  hsl(229, 6%, 66%);
+     font-size: 1.2rem;
+     margin-bottom: 3.6rem;
+    }
+
+    .card-icon{
+      width: 20%;
+      align-self: end;
+      }
+
+    .aqua-border{
+      border-top: 4px solid hsl(180, 62%, 55%);
+      
+    }
+
+    .red-border{
+     border-top: 4px solid hsl(0, 78%, 62%);
+    }
+
+    .orange-border{
+      
+      border-top: 4px solid hsl(34, 97%, 64%) ;
+    }
+
+    .blue-border{
+      border-top: 4px solid hsl(212, 86%, 64%);
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  
+  <div class="header-slogans">
+    
+    <h2>Reliable, efficient delivery</h2>
+    <h1>Powered by Technology</h1>
+    <p class="slogan-paragraph">Our Artificial Intelligence powered tools use millions of project data points 
+      to ensure that your project is successful</p>
+    </div>
+    
+    
+    <div class="cards">
+      
+      <div class="card aqua-border">
+        <di class="card-texts">
+
+          <p class="card-header-text">Supervisor</p>
+          <p class="card-text">Monitors activity to identify project roadblocks</p>
+          <img src="/images/icon-supervisor.svg" alt="" class="card-icon">
+        </div>
+        <div class="group-cards">
+
+          <div class="card red-border">
+            <di class="card-texts">
+              
+              <p class="card-header-text">Team Builder</p>
+              <p class="card-text">Scans our talent network to create the optimal team for your project</p>
+              <img src="/images/icon-team-builder.svg" alt="" class="card-icon">
+            </div>
+            
+            <div class="card orange-border">
+              <di class="card-texts">
+                
+                <p class="card-header-text">Karma</p>
+                <p class="card-text">Regularly evaluates our talent to ensure quality</p>
+                <img src="/images/icon-karma.svg" alt="" class="card-icon">
+              </div>
+              
+            </div>
+            <div class="card blue-border">
+              <di class="card-texts">
+      
+                <p class="card-header-text">Calculator</p>
+                <p class="card-text">Uses data from past projects to provide better delivery estimates</p>
+                <img src="/images/icon-calculator.svg" alt="" class="card-icon">
+              </div>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+
+
+  
+</body>
+</html>
