@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+   }
+
+   html{
+     font-size: 62.5%;
+   }
+
+   body{
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: "Libre Franklin",sans-serif;
+     overflow: hidden;
+   }
+
+   .container{
+     display: flex;
+     flex-direction: column;
+     max-width: 120rem;
+     align-items: center;
+     justify-content: center;
+     padding: 9.6rem;
+   }
+
+   .logo{
+     margin-bottom: 3.2rem;
+   }
+
+   .launching-text{
+     font-weight: 300;
+     color: hsl(0, 0%, 59%);
+     font-size: 3.2rem;
+     margin-bottom: 1rem;
+   }
+
+   .launching-text strong{
+     color: black;
+   }
+
+   .subscribe-text{
+     font-size: 1.4rem;
+     color: hsl(0, 1%, 40%);
+     margin-bottom: 2.4rem;
+
+   }
+
+   .cta{
+     display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 4.8rem;
+   }
+
+   .cta input{
+     padding: 1.2rem 1.8rem;
+     border-radius: 2rem;
+     outline: none;
+     border: 1px solid hsl(0, 0%, 85%) ;
+   }
+
+   .cta button{
+     
+     border: none;
+     outline: none;
+     background-color: hsl(223, 87%, 63%) ;
+     color: #fff;
+     padding: 1.2rem 3.2rem;
+     text-align: center;
+     font-family: "Libre Franklin",sans-serif;
+     font-weight:600;
+     border-radius: 2rem;
+     cursor: pointer;
+   }
+
+   .dashboard{
+     width: 50%;
+     margin-bottom: 4.8rem;
+   }
+
+   .social-icons{
+     display: flex;
+     margin-bottom: 2.4rem;
+     gap: 2.4rem;
+     font-size: 1.7rem;
+     
+   }
+
+   .icon{
+     cursor: pointer;
+     color: hsl(223, 87%, 63%);
+     border: 1px solid hsl(0, 0%, 93%);
+     border-radius: 50%;
+     padding: 0.5rem;
+     
+   }
+
+   .copyright-text{
+     color: hsl(0, 0%, 59%);
+   }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <img src="images/logo.svg" alt="" class="logo">
+    <h1 class="launching-text">We are launching <strong>soon!</strong></h1>
+    <p class="subscribe-text">Subscribe and get notified</p>
+    <div class="cta">
+      <input type="text" placeholder="Your email address" required>
+      <button type="submit">Notify Me</button>
+    </div>
+    <img src="images/illustration-dashboard.png" alt="" class="dashboard">
+    <div class="social-icons">
+      <ion-icon  class="icon" name="logo-facebook"></ion-icon>
+      <ion-icon class="icon" name="logo-twitter"></ion-icon>
+      <ion-icon class="icon" name="logo-instagram"></ion-icon>
+      </div>
+
+      <p class="copyright-text">&copy; Copyright Ping. All rights reserved.</p>
+  </div>
+
+
+  <!-- We are launching soon!
+
+  Subscribe and get notified
+
+  Notify Me
+
+  &copy; Copyright Ping. All rights reserved. -->
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+</body>
+</html>
