@@ -1,0 +1,249 @@
+<!-- SCREENSHOT : https://prnt.sc/20e1hcq -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    html{
+      font-size: 62.5%;
+    }
+
+    body{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background:  hsl(229, 57%, 11%) ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      font-family: "Raleway",sans-serif;
+      
+      }
+
+      .background{
+        width: 100%;
+       position: absolute;
+       bottom: 0;
+       z-index: -1;
+        
+      }
+
+      .container{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 2.4rem;
+      }
+      .document-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        padding: 3.2rem 12rem 3.2rem 3.2rem;
+        background-color:hsl(228, 56%, 26%) ;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 8rem;
+        border-bottom-right-radius: 1rem;
+      }
+
+      .logo{
+        width: 60%;
+      }
+       
+      .icons{
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+        
+       }
+      .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8rem;
+        background-color: hsl(229, 57%, 11%) ;
+        border-radius: 1rem;
+        cursor: pointer;
+       
+      }
+
+
+      .container-storage{
+        padding: 3.2rem 2.4rem;
+        background-color: hsl(228, 56%, 26%);
+        align-self: flex-end;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.2rem;
+        border-radius: 0.5rem ;
+        position: relative;
+
+      }
+
+      .used-data{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: hsl(229, 7%, 55%);
+        
+      }
+
+      .used-data span{
+        color: rgba(255, 255, 255, 0.74);
+        font-weight: 700;
+      }
+
+      progress{
+        
+        width: 100%;
+      }
+      
+
+      progress[value]{
+        appearance: none;
+        
+        
+      }
+    
+      progress[value]::-webkit-progress-bar{
+       background : hsl(229, 57%, 11%);
+       border-radius: 1rem;
+      }
+
+      progress[value]::-webkit-progress-value{
+       background : linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+       border-radius: 1rem;
+      }
+
+      .data-spans{
+        display: flex;
+        justify-content: space-between;
+        color: rgba(255, 255, 255, 0.74);
+
+      }
+
+
+      .remainder-container{
+        position: absolute;
+        top: -3rem;
+        right: 2rem;
+      }
+      
+      .remaining-remainder{
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        position: relative;
+      }
+
+      
+      .remaining-remainder::after{
+        position: absolute;
+        content: "";
+        background: #fff;
+        bottom: -1.2rem;
+        right: 0;
+        width: 3rem;
+        height: 2rem;
+        display: block;
+        clip-path: polygon(0 0,100% 0,100% 100%);
+
+      }
+
+      
+
+      .left-data{
+        color: rgba(0, 0, 0, 0.781);
+        font-weight: 400;
+      }
+
+      .number{
+        font-size: 2.4rem;
+        color: #000;
+        font-weight: 700;
+      }
+
+     
+
+
+  </style>
+</head>
+<body>
+   <img src="images/bg-desktop.png" alt="" class="background">
+
+
+    <div class="container">
+
+      <div class="document-container">
+        <img src="images/logo.svg" alt="" class="logo">
+        <div class="icons">
+          <div class="icon">
+            
+            <img src="images/icon-document.svg" alt="" class="icon">
+          </div>
+
+          <div class="icon">
+
+            <img src="images/icon-folder.svg" alt="" class="icon">
+          </div>
+          <div class="icon">
+
+            <img src="images/icon-upload.svg" alt="" class="icon">
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container-storage">
+      <p class="used-data">You've used <span>815 GB</span> of your storage</p>
+      <progress id="file" value="815" max="1000"> </progress>
+      <div class="data-spans">
+        <p class="zero-gb">0 GB</p>
+        <p class="zero-gb">1000 GB</p>
+      </div>
+   <div class="remainder-container">
+
+
+     <div class="remaining-remainder">
+       <p class="number">185</p>
+       <p class="left-data">GB LEFT</p>
+      </div>
+    </div>
+    </div>
+
+
+ 
+    </div>
+
+
+
+
+</body>
+</html>
