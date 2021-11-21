@@ -1,0 +1,247 @@
+<!-- SCREENSHOT : https://prnt.sc/20e2fic -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <style>
+ *{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+ }
+
+ html{
+   font-size: 62.5%;
+ }
+
+ body{
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: hsl(185, 41%, 84%);
+   font-family: "Space Mono",sans-serif;
+}
+
+
+.container{ 
+  padding: 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.5rem;
+  gap: 3.2rem;
+}
+
+.calculator-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.tip-calculator{
+  position: relative;
+}
+
+label{
+  color: hsl(186, 14%, 43%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+input{
+  font-size: 2.4rem;
+  outline: none;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  font-family: "Space Mono",sans-serif;
+  padding: 0.6rem 2.4rem;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  text-align: right;
+  border-radius: 1rem;
+
+}
+
+input::placeholder{
+  color: hsl(183, 100%, 15%);
+
+}
+
+.tip-percents{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+
+.tips{
+  display: inline-block;
+  color: #fff;
+  background-color: hsl(183, 100%, 15%);
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.active{
+  background-color: hsl(172, 67%, 45%);
+}
+
+.custom{
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(186, 14%, 43%);
+
+
+}
+
+.icon{
+  position: absolute;
+  width: 12px;
+  top: 4.6rem;
+  left: 2rem;
+}
+
+.people-calculator{
+  position: relative;
+}
+
+
+
+.tip-monitor{
+  padding: 3.2rem 2.4rem ;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tip-datas{
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.price-table{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-type{
+  color: rgba(244, 250, 250, 0.884);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.person-text{
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+}
+
+.price{
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.reset-btn{
+  padding: 0.8rem 2.4rem;
+  background-color: hsl(172, 67%, 45%);
+  text-align: center;
+  color: hsl(183, 100%, 15%);
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+  <div class="calculator-container">
+
+    <div class="tip-calculator">
+      <img src="images/icon-dollar.svg" alt="icon" class="icon">
+      <label class="bill-amount-label" for="bill">Bill</label>
+      <input placeholder="142.55"   name="bill_amount" id="bill">
+    </div>
+    
+    <div class="tip-percent-selector">
+      <label>Select Tip %</label>
+      <div class="tip-percents">
+        <a href="#" class="tips">5%</a>
+        <a href="#" class="tips">10%</a>
+        <a href="#" class="tips active">15%</a>
+        <a href="#" class="tips">25%</a>
+        <a href="#" class="tips">50%</a>
+        <a href="#" class="tips custom">Custom</a>
+      </div>
+    </div>
+    <div class="people-calculator">
+      <img src="images/icon-person.svg" alt="icon" class="icon">
+      <label for="people" >Number of People</label>
+      <input placeholder="5"   name="number-of-people" id="people">
+    </div>
+  </div>
+  <div class="tip-monitor">
+  <div class="tip-datas">
+
+    <div class="tip-amount price-table">
+      <div class="data-types">
+        <p class="data-type">
+          Tip Amount
+        </p>
+        <p class="person-text">/ person</p>
+      </div>
+      <p class="price">&dollar;4.27</p>
+    </div>
+    
+    <div class="tip-amount price-table">
+      <div class="data-types">
+        <p class="data-type">
+          Total
+        </p>
+        <p class="person-text">/ person</p>
+      </div>
+      <p class="price">&dollar;32.79</p>
+    </div>
+  </div>
+
+<a href="#" class="reset-btn">RESET</a>
+
+  </div>
+</div>
+
+
+  
+
+</body>
+</html>
