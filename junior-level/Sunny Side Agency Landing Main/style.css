@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style : none;
+    text-decoration: none;
+  }
+
+  html{
+    font-size: 62.5%;
+  }
+
+  .hero{
+    height: calc(100vh - 10.48rem);
+    background: url("images/desktop/image-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .nav{
+  background-color: #3EBEFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2rem;
+  }
+
+  .logo{
+    cursor: pointer;
+  }
+
+  .links ul{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .links ul li a{
+    display: inline-block;
+    color: #fff;
+    font-family: "Barlow",sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .active{
+    padding: 1.2rem 2.4rem;
+    background-color: #fff;
+    color: #000 !important;
+    border-radius: 2rem;
+    font-family: "Fraunces",sans-serif !important;
+    font-size: 1.4rem !important;
+    text-transform: uppercase;
+  }
+
+  .hero-text{
+    font-family: "Fraunces",sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    font-size: 4.8rem;
+    color: #fff;
+  }
+
+  .arr-down{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+ 
+
+  .services{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    }
+
+
+
+  .service-informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 9.6rem;
+    gap: 3.2rem;
+
+  }
+
+  .service-name{
+    font-size: 4.8rem;
+    font-weight: 900;
+    font-family: "Fraunces",sans-serif;
+  }
+
+  .service-text{
+    font-size: 2.4rem;
+    font-family: "Barlow",sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+  }
+
+  .service-photo{
+       width: 100%;
+ }
+
+
+ .service-text-on{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ }
+
+ .service-photos{
+
+position: relative;
+
+ }
+
+
+ .service-informations-absolute{
+   position: absolute;
+bottom:5%;
+   left: 50%;
+   transform: translate(-50%,-50%) ;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2.4rem;
+   text-align: center;
+ }
+
+ .service-name-absolute{
+   font-family: "Fraunces",sans-serif;
+   font-size: 3.2rem;
+ }
+
+ .service-text-absolute{
+  font-family: "Barlow"; 
+  font-size: 1.8rem;
+   color: rgba(0, 0, 0, 0.5);
+   line-height: 1.5;
+   
+ }
+
+ .testimonials{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 9.6rem;
+   gap: 4.8rem;
+ }
+
+
+
+ .testimonial-header-text{
+   font-size: 2.4rem;
+  color: hsl(210, 4%, 67%);
+  font-family: "Fraunces",sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.6rem;
+ }
+
+  .testimonials-container{
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+
+  .testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.8rem;
+    text-align: center;
+    font-family: "Barlow",sans-serif;
+  }
+
+ .profile-photo{
+   border-radius: 50%;
+   width: 6.4rem;
+ }
+
+ .testimonial-text{
+  color: hsl(204, 2%, 51%);
+  font-size: 1.6rem;
+  line-height: 1.5;
+
+ }
+
+ .testimonial-author{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1.2rem;
+ }
+
+ .testimonial-author-name{
+   color: #000;
+   font-family: "Fraunces",sans-serif;
+   font-size: 1.8rem;
+ }
+
+ .testimonial-author-job{
+   color: hsl(210, 4%, 67%);
+ }
+
+ 
+ .gallery{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+ }
+
+ .gallery-photo{
+   width: 100% ;
+ }
+
+ .footer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2.4rem;
+   background-color: #91D3C5;
+   padding: 4.8rem;
+ }
+
+ .footer-logo{
+    fill: hsl(167, 40%, 24%);
+    cursor: pointer;
+ }
+
+ .footer-menu{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 6.4rem;
+   margin-bottom: 3.2rem;
+ }
+
+ .footer-menu-item:link,.footer-menu-item:visited{
+   color: hsl(168, 34%, 41%);
+   font-family: "Barlow",sans-serif;
+   font-size: 1.4rem;
+ }
+
+
+ .social-icons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1.8rem;
+ }
+
+ .social-icon{
+   font-size: 1.8rem;
+    fill: hsl(167, 40%, 24%);
+    cursor: pointer;
+ }
+
+
+ 
